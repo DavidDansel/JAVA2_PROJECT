@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="440.0" minWidth="715.0" prefHeight="440.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java2.phoneBook.view.ContactsListController">
+   <children>
+      <TableView fx:id="contactsListsTable" layoutY="28.0" prefHeight="411.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="lName" prefWidth="105.0" text="L. NAME" />
+            <TableColumn fx:id="fName" prefWidth="78.0" text="F. NAME" />
+            <TableColumn fx:id="nickName" prefWidth="128.0" text="NICK NAME" />
+            <TableColumn fx:id="phoneNo" prefWidth="110.0" text="PHONE NO" />
+            <TableColumn fx:id="address" prefWidth="72.0" text="ADDRESS" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="65.0" text="EMAIL" />
+            <TableColumn fx:id="bDate" minWidth="0.0" prefWidth="115.0" text="B.DATE" />
+        </columns>
+      </TableView>
+      <Button fx:id="homeBtn" layoutY="1.0" mnemonicParsing="false" onAction="#handleHomeButton" text="HOME" />
+   </children>
+</AnchorPane>
